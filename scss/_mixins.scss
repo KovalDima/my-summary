@@ -1,0 +1,25 @@
+@mixin neueHaasFont($font-size, $line-height) {
+  font-family: 'Neue Haas Grotesk';
+  font-size: $font-size;
+  line-height: $line-height;
+  text-transform: uppercase;
+}
+@mixin arialBold {
+  font-family: 'Arial bold';
+  font-size: 25px;
+  line-height: 31px;
+}
+@mixin arialRegular {
+  font-family: 'Arial regular';
+  font-size: 18px;
+  line-height: 23px;
+}
+@mixin iconBefore($width, $height) {
+  content: '';
+  position: absolute;
+  width: $width;
+  height: $height;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
